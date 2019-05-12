@@ -916,7 +916,7 @@ textarea.form-control {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat; }
-    .block-2 .front:before {
+    .block-2 .front:before, .block-2 .back:before {
       content: '';
       position: absolute;
       top: 0;
@@ -946,6 +946,9 @@ textarea.form-control {
         font-size: 12px; }
   .block-2 .back {
     background: #fff;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     -webkit-box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.4);
     box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.4);
     -webkit-transform: rotateY(-180deg);
