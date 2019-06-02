@@ -295,3 +295,45 @@
 
 
 })(jQuery);
+
+function contactUs() {
+	Email.send({
+		Host: " mail.icentocampanili.com",
+		Username: "info@icentocampanili.com",
+		Password: "nicola100",
+		To: 'info@icentocampanili.com',
+		From: $( "#email" ).val(),
+		Subject: 'Website ContactUS',
+		Body: 'Name: '+ $( "#name" ).val() + "\n" + 'Phone: ' + $( "#phone" ).val() + "\n\n\n\n\n" + $( "#message" ).val()
+	}).then(
+		message => alert(message)
+	);
+}
+
+function verifyDisponibility() {
+	Email.send({
+		Host: " mail.icentocampanili.com",
+		Username: "info@icentocampanili.com",
+		Password: "nicola100",
+		To: 'info@icentocampanili.com',
+		From: $( "#email" ).val(),
+		Subject: 'Website ContactUS',
+		Body: 'Name: '+ $( "#name" ).val() + "\n" + 'Phone: ' + $( "#phone" ).val() + "\n\n\n\n\n" + $( "#message" ).val()
+	}).then(
+		message => alert(message)
+	);
+}
+
+function preserve() {
+	Email.send({
+		Host: " mail.icentocampanili.com",
+		Username: "info@icentocampanili.com",
+		Password: "nicola100",
+		To: 'info@icentocampanili.com',
+		From: $( "#email" ).val(),
+		Subject: 'Website ContactUS',
+		Body: 'Name: '+ $( "#name" ).val() + "\n" + 'Phone: ' + $( "#phone" ).val() + "\n\n\n\n\n" + $( "#message" ).val()
+	}).then(
+		message => alert(message)
+	);
+}
