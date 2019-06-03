@@ -1963,3 +1963,9 @@ textarea.form-control {
     top: 13px;
   }
 }
+
+.services {
+  font-size: 27px;
+    margin-bottom: 0px;
+    color: white;
+}
