@@ -10,12 +10,12 @@ body {
 
 ::-moz-selection {
   color: #fff;
-  background: #ff0000;
+  background: #F998B2;
 }
 
 ::selection {
   color: #fff;
-  background: #ff0000;
+  background: #F998B2;
 }
 
 a {
@@ -78,7 +78,7 @@ h5 {
 
 .btn.btn-outline-white-primary:hover {
   border: 2px solid transparent;
-  background: #ff0000;
+  background: #F998B2;
   color: #fff;
 }
 
@@ -111,7 +111,7 @@ h5 {
 
 .form-control:active,
 .form-control:focus {
-  border-color: #ff0000;
+  border-color: #F998B2;
 }
 
 textarea.form-control {
@@ -147,7 +147,7 @@ textarea.form-control {
 }
 
 .site-hero.overlay:before {
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.535);
   content: "";
   position: absolute;
   height: 100vh;
@@ -344,7 +344,7 @@ textarea.form-control {
 }
 
 .visit-section .visit a:hover {
-  color: #ff0000;
+  color: #F998B2;
 }
 
 .visit-section .visit img {
@@ -360,7 +360,7 @@ textarea.form-control {
 
 .visit-section .reviews-star span {
   font-size: 18px;
-  color: #ff0000;
+  color: #F998B2;
 }
 
 .visit-section .reviews-count {
@@ -474,7 +474,7 @@ textarea.form-control {
 }
 
 .post .media-custom a:hover {
-  color: #ff0000;
+  color: #F998B2;
 }
 
 .post .media-custom .media-body {
@@ -765,7 +765,7 @@ textarea.form-control {
 }
 
 .owl-carousel.js-carousel-2 .owl-dots .owl-dot.active>span {
-  background: #ff0000;
+  background: #F998B2;
 }
 
 .owl-carousel.js-carousel-2 .owl-dots .owl-dot:active,
@@ -989,7 +989,7 @@ textarea.form-control {
 }
 
 .custom-pagination .page-item.active .page-link {
-  background: #ff0000;
+  background: #F998B2;
   -webkit-box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);
 }
@@ -1143,7 +1143,7 @@ textarea.form-control {
   display: block;
   border-radius: 50%;
   opacity: 1;
-  color: #ff0000 !important;
+  color: #F998B2 !important;
 }
 
 .site-block-half.site-block-video .image .play-button:hover {
@@ -1684,7 +1684,7 @@ textarea.form-control {
 }
 
 .custom-pagination ul li.active span {
-  background: #ff0000;
+  background: #F998B2;
   color: #fff;
   border-radius: 50%;
 }
@@ -1730,7 +1730,7 @@ textarea.form-control {
 @media (max-width: 991.98px) {
   .pb_navbar ul>li.cta-btn>a>span {
     border: none;
-    background: #ff0000;
+    background: #F998B2;
     color: #fff;
   }
 }
@@ -1883,12 +1883,12 @@ textarea.form-control {
 }
 
 .pb_navbar.scrolled.pb_scrolled-light ul li a.active {
-  color: #ff0000 !important;
+  color: #F998B2 !important;
 }
 
 .pb_navbar.scrolled.pb_scrolled-light ul li.cta-btn>a>span {
   border: none;
-  background: #ff0000;
+  background: #F998B2;
   color: #fff;
 }
 
