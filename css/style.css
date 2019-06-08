@@ -1392,23 +1392,6 @@ textarea.form-control {
   font-size: 12px;
 }
 
-@media (max-width: 991.98px) {
-  .block-2 .back {
-    -webkit-transform: rotateY(0deg);
-    -moz-transform: rotateY(0deg);
-    -o-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-  }
-
-  .block-2 .front {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-  }
-}
-
 .text-black {
   color: #000 !important;
 }
