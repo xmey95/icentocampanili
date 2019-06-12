@@ -298,7 +298,8 @@
 
 function contactUs() {
 	Email.send({
-		Host: " mail.icentocampanili.com",
+    SecureToken: "1e2c65cf-2763-46c5-b703-b75e07975255",
+    Host: "mail.icentocampanili.com",
 		Username: "info@icentocampanili.com",
 		Password: "nicola100",
 		To: 'info@icentocampanili.com',
