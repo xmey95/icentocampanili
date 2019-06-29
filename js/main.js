@@ -297,44 +297,30 @@
 })(jQuery);
 
 function contactUs() {
-	Email.send({
-    SecureToken: "1e2c65cf-2763-46c5-b703-b75e07975255",
-    Host: "mail.icentocampanili.com",
-		Username: "info@icentocampanili.com",
-		Password: "nicola100",
-		To: 'info@icentocampanili.com',
-		From: $( "#email" ).val(),
-		Subject: 'Website ContactUS',
-		Body: 'Name: '+ $( "#name" ).val() + "\n" + 'Phone: ' + $( "#phone" ).val() + "\n\n\n\n\n" + $( "#message" ).val()
-	}).then(
-		message => alert(message)
-	);
+	var name = $("#name").val()
+  var phone = $("#phone").val()
+  var message = $("#message").val()
+
+  document.location.href = 'mailto:info@icentocampanili.com?subject=Messaggio dal sito&body=Nome: ' + name + '%0D%0ATelefono: ' + phone + '%0D%0A%0D%0A' + message;
 }
 
 function verifyDisponibility() {
-	Email.send({
-		Host: " mail.icentocampanili.com",
-		Username: "info@icentocampanili.com",
-		Password: "nicola100",
-		To: 'info@icentocampanili.com',
-		From: $( "#email" ).val(),
-		Subject: 'Website ContactUS',
-		Body: 'Name: '+ $( "#name" ).val() + "\n" + 'Phone: ' + $( "#phone" ).val() + "\n\n\n\n\n" + $( "#message" ).val()
-	}).then(
-		message => alert(message)
-	);
+  var checkin = $("#checkin_date").val()
+  var checkout = $("#checkout_date").val()
+  var room = $("#rooms").val()
+  var adults = $("#adults").val()
+
+  document.location.href = 'mailto:info@icentocampanili.com?subject=Richiesta Disponibilità&body=Da: ' + checkin + '%0D%0AA: ' + checkout + '%0D%0AStanza: ' + room + '%0D%0ANumero persone: ' + adults;
 }
 
 function preserve() {
-	Email.send({
-		Host: " mail.icentocampanili.com",
-		Username: "info@icentocampanili.com",
-		Password: "nicola100",
-		To: 'info@icentocampanili.com',
-		From: $( "#email" ).val(),
-		Subject: 'Website ContactUS',
-		Body: 'Name: '+ $( "#name" ).val() + "\n" + 'Phone: ' + $( "#phone" ).val() + "\n\n\n\n\n" + $( "#message" ).val()
-	}).then(
-		message => alert(message)
-	);
+	var checkin = $("#checkin_date2").val()
+  var checkout = $("#checkout_date2").val()
+  var adults = $("#adults2").val()
+  var children = $("#children").val()
+  var name = $("#name2").val()
+  var phone = $("#phone2").val()
+  var message = $("#message2").val()
+
+  document.location.href = 'mailto:info@icentocampanili.com?subject=Richiesta Prenotazione&body=Nome: ' + name + '%0D%0ATelefono: ' + phone + '%0D%0ADa: ' + checkin + '%0D%0AA: ' + checkout + '%0D%0ANumero persone: ' + adults + '%0D%0ANumero bambini: ' + children + '%0D%0A%0D%0A%0D%0A' + message;
 }

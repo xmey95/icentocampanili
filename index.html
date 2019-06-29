@@ -103,10 +103,10 @@
                       <label for="adults" class="font-weight-bold text-black">Appartamenti</label>
                       <div class="field-icon-wrap">
                         <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                        <select name="" id="adults" class="form-control">
-                          <option value="">Monolocale</option>
-                          <option value="">Suite - Bradamante</option>
-                          <option value="">Suite - Carlo Magno</option>
+                        <select name="" id="rooms" class="form-control">
+                          <option value="Monolocale">Monolocale</option>
+                          <option value="Suite - Bradamante">Suite - Bradamante</option>
+                          <option value="Suite - Carlo Magno">Suite - Carlo Magno</option>
                         </select>
                       </div>
                     </div>
@@ -115,17 +115,17 @@
                       <div class="field-icon-wrap">
                         <div class="icon"><span class="ion-ios-arrow-down"></span></div>
                         <select name="" id="adults" class="form-control">
-                          <option value="">1</option>
-                          <option value="">2</option>
-                          <option value="">3</option>
-                          <option value="">4+</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4+">4+</option>
                         </select>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6 col-lg-3 align-self-end">
-                  <button class="btn btn-primary btn-block text-white">Verifica Disponibilità</button>
+                  <button class="btn btn-primary btn-block text-white" onclick="verifyDisponibility()">Verifica Disponibilità</button>
                 </div>
               </div>
             </form>
@@ -379,7 +379,12 @@
         </div>
         <div class="row">
           <div class="col-md-12">
+
             <div class="home-slider major-caousel owl-carousel mb-5" data-aos="fade-up" data-aos-delay="200">
+                <div class="slider-item">
+                    <a href="images/foto8.jpg" data-fancybox="images" data-caption="Caption for this image"><img
+                        src="images/foto8.jpg" alt="Image placeholder" class="img-fluid"></a>
+                  </div>
               <div class="slider-item">
                 <a href="images/foto3.jpg" data-fancybox="images" data-caption="Caption for this image"><img
                     src="images/foto3.jpg" alt="Image placeholder" class="img-fluid"></a>
@@ -409,127 +414,112 @@
                     src="images/foto21.jpg" alt="Image placeholder" class="img-fluid"></a>
               </div>
               <div class="slider-item">
-                <a href="images/foto26.jpg" data-fancybox="images" data-caption="Caption for this image"><img
-                    src="images/foto26.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
+                  <a href="images/foto37.jpg" data-fancybox="images" data-caption="Caption for this image"><img
+                      src="images/foto37.jpg" alt="Image placeholder" class="img-fluid"></a>
+                </div>
               <div class="slider-item">
                 <a href="images/foto31.jpg" data-fancybox="images" data-caption="Caption for this image"><img
                     src="images/foto31.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
-              <div class="slider-item">
-                <a href="images/foto32.jpg" data-fancybox="images" data-caption="Caption for this image"><img
-                    src="images/foto32.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
-              <div class="slider-item">
-                <a href="images/foto10.jpg" data-fancybox="images" data-caption="Caption for this image"><img
-                    src="images/foto10.jpg" alt="Image placeholder" class="img-fluid"></a>
               </div>
               <div class="slider-item">
                 <a href="images/foto33.jpg" data-fancybox="images" data-caption="Caption for this image"><img
                     src="images/foto33.jpg" alt="Image placeholder" class="img-fluid"></a>
               </div>
               <div class="slider-item">
+                  <a href="images/foto36.jpg" data-fancybox="images" data-caption="Caption for this image"><img
+                      src="images/foto36.jpg" alt="Image placeholder" class="img-fluid"></a>
+                </div>
+                <div class="slider-item">
+                    <a href="images/foto44.jpg" data-fancybox="images" data-caption="Caption for this image"><img
+                        src="images/foto44.jpg" alt="Image placeholder" class="img-fluid"></a>
+                  </div>
+                  <div class="slider-item">
+                      <a href="images/foto42.jpg" data-fancybox="images" data-caption="Caption for this image"><img
+                          src="images/foto42.jpg" alt="Image placeholder" class="img-fluid"></a>
+                    </div>
+                <div class="slider-item">
+                    <a href="images/foto11.jpg" data-fancybox="images" data-caption="Caption for this image"><img
+                        src="images/foto11.jpg" alt="Image placeholder" class="img-fluid"></a>
+                  </div>
+              <div class="slider-item">
                 <a href="images/foto34.jpg" data-fancybox="images" data-caption="Caption for this image"><img
                     src="images/foto34.jpg" alt="Image placeholder" class="img-fluid"></a>
               </div>
+              <div class="slider-item">
+                  <a href="images/foto46.jpg" data-fancybox="images" data-caption="Caption for this image"><img
+                      src="images/foto46.jpg" alt="Image placeholder" class="img-fluid"></a>
+                </div>
               <div class="slider-item">
                 <a href="images/foto35.jpg" data-fancybox="images" data-caption="Caption for this image"><img
                     src="images/foto35.jpg" alt="Image placeholder" class="img-fluid"></a>
               </div>
               <div class="slider-item">
-                <a href="images/foto36.jpg" data-fancybox="images" data-caption="Caption for this image"><img
-                    src="images/foto36.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
-              <div class="slider-item">
-                <a href="images/foto11.jpg" data-fancybox="images" data-caption="Caption for this image"><img
-                    src="images/foto11.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
-              <div class="slider-item">
-                <a href="images/foto16.jpg" data-fancybox="images" data-caption="Caption for this image"><img
-                    src="images/foto16.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
-              <div class="slider-item">
-                <a href="images/foto37.jpg" data-fancybox="images" data-caption="Caption for this image"><img
-                    src="images/foto37.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
-              <div class="slider-item">
-                <a href="images/foto38.jpg" data-fancybox="images" data-caption="Caption for this image"><img
-                    src="images/foto38.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
+                  <a href="images/foto26.jpg" data-fancybox="images" data-caption="Caption for this image"><img
+                      src="images/foto26.jpg" alt="Image placeholder" class="img-fluid"></a>
+                </div>
               <div class="slider-item">
                 <a href="images/foto39.jpg" data-fancybox="images" data-caption="Caption for this image"><img
                     src="images/foto39.jpg" alt="Image placeholder" class="img-fluid"></a>
               </div>
               <div class="slider-item">
+                  <a href="images/foto41.jpg" data-fancybox="images" data-caption="Caption for this image"><img
+                      src="images/foto41.jpg" alt="Image placeholder" class="img-fluid"></a>
+                </div>
+                  <div class="slider-item">
+                      <a href="images/foto17.jpg" data-fancybox="images" data-caption="Caption for this image"><img
+                          src="images/foto17.jpg" alt="Image placeholder" class="img-fluid"></a>
+                    </div>
+              <div class="slider-item">
                 <a href="images/foto40.jpg" data-fancybox="images" data-caption="Caption for this image"><img
                     src="images/foto40.jpg" alt="Image placeholder" class="img-fluid"></a>
               </div>
               <div class="slider-item">
-                <a href="images/foto13.jpg" data-fancybox="images" data-caption="Caption for this image"><img
-                    src="images/foto13.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
-              <div class="slider-item">
-                <a href="images/foto41.jpg" data-fancybox="images" data-caption="Caption for this image"><img
-                    src="images/foto41.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
-              <div class="slider-item">
-                <a href="images/foto42.jpg" data-fancybox="images" data-caption="Caption for this image"><img
-                    src="images/foto42.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
+                  <a href="images/foto38.jpg" data-fancybox="images" data-caption="Caption for this image"><img
+                      src="images/foto38.jpg" alt="Image placeholder" class="img-fluid"></a>
+                </div>
+              
               <div class="slider-item">
                 <a href="images/foto43.jpg" data-fancybox="images" data-caption="Caption for this image"><img
                     src="images/foto43.jpg" alt="Image placeholder" class="img-fluid"></a>
               </div>
               <div class="slider-item">
-                <a href="images/foto44.jpg" data-fancybox="images" data-caption="Caption for this image"><img
-                    src="images/foto44.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
+                  <a href="images/foto48.jpg" data-fancybox="images" data-caption="Caption for this image"><img
+                      src="images/foto48.jpg" alt="Image placeholder" class="img-fluid"></a>
+                </div>
+
               <div class="slider-item">
                 <a href="images/foto45.jpg" data-fancybox="images" data-caption="Caption for this image"><img
                     src="images/foto45.jpg" alt="Image placeholder" class="img-fluid"></a>
               </div>
               <div class="slider-item">
-                <a href="images/foto8.jpg" data-fancybox="images" data-caption="Caption for this image"><img
-                    src="images/foto8.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
+                  <a href="images/foto47.jpg" data-fancybox="images" data-caption="Caption for this image"><img
+                      src="images/foto47.jpg" alt="Image placeholder" class="img-fluid"></a>
+                </div>
+                <div class="slider-item">
+                    <a href="images/foto13.jpg" data-fancybox="images" data-caption="Caption for this image"><img
+                        src="images/foto13.jpg" alt="Image placeholder" class="img-fluid"></a>
+                  </div>
               <div class="slider-item">
                 <a href="images/foto9.jpg" data-fancybox="images" data-caption="Caption for this image"><img
                     src="images/foto9.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
+              </div> 
+                <div class="slider-item">
+                    <a href="images/foto14.jpg" data-fancybox="images" data-caption="Caption for this image"><img
+                        src="images/foto14.jpg" alt="Image placeholder" class="img-fluid"></a>
+                  </div> 
               <div class="slider-item">
                 <a href="images/foto12.jpg" data-fancybox="images" data-caption="Caption for this image"><img
                     src="images/foto12.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
-              <div class="slider-item">
-                <a href="images/foto46.jpg" data-fancybox="images" data-caption="Caption for this image"><img
-                    src="images/foto46.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
-              <div class="slider-item">
-                <a href="images/foto47.jpg" data-fancybox="images" data-caption="Caption for this image"><img
-                    src="images/foto47.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
-              <div class="slider-item">
-                <a href="images/foto14.jpg" data-fancybox="images" data-caption="Caption for this image"><img
-                    src="images/foto14.jpg" alt="Image placeholder" class="img-fluid"></a>
               </div>
               <div class="slider-item">
                 <a href="images/foto15.jpg" data-fancybox="images" data-caption="Caption for this image"><img
                     src="images/foto15.jpg" alt="Image placeholder" class="img-fluid"></a>
               </div>
               <div class="slider-item">
-                <a href="images/foto17.jpg" data-fancybox="images" data-caption="Caption for this image"><img
-                    src="images/foto17.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
-              <div class="slider-item">
-                <a href="images/foto48.jpg" data-fancybox="images" data-caption="Caption for this image"><img
-                    src="images/foto48.jpg" alt="Image placeholder" class="img-fluid"></a>
-              </div>
-              <div class="slider-item">
                 <a href="images/foto49.jpg" data-fancybox="images" data-caption="Caption for this image"><img
                     src="images/foto49.jpg" alt="Image placeholder" class="img-fluid"></a>
               </div>
             </div>
-            <!-- END slider -->
           </div>
 
         </div>
@@ -721,6 +711,16 @@
             <form method="post" class="bg-white p-md-5 p-4 mb-5 border">
               <div class="row">
                 <div class="col-md-6 form-group">
+                    <p><span class="d-block"><i class="fas fa-phone mr-2"></i>Telefono:</span> <span>
+                        +39 095 7632052</span></p>
+                </div>
+                <div class="col-md-6 form-group">
+                    <p><span class="d-block"><i class="fas fa-phone mr-2"></i>Cellulare:</span> <span>
+                        +39 347 1319100</span></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 form-group">
                   <label for="name">Nome</label>
                   <input type="text" name="name" id="name" class="form-control ">
                 </div>
@@ -745,8 +745,7 @@
               </div>
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input value="Invia" class="btn btn-primary text-white font-weight-bold"
-                    onclick="contactUs()">
+                  <input value="Invia" class="btn btn-primary text-white font-weight-bold" onclick="contactUs()">
                   <div class="submitting"></div>
                 </div>
               </div>
@@ -819,7 +818,8 @@
                 Via Giuseppe Sciuti, 22
                 </br>95024 Acireale (CT) - Italy</span></p>
             <p><span class="d-block"><i class="fas fa-phone mr-2"></i>Telefono:</span> <span>
-                +39 095 7632052</span></p>
+                +39 095 7632052</span></br><span>
+                    +39 347 1319100</span></p>
             <p><span class="d-block"><i class="fas fa-envelope mr-2"></i>Email:</span> <span>
                 info@icentocampanili.com</span></p>
           </div>
@@ -834,9 +834,9 @@
           </p>
 
           <p class="col-md-4 text-right social">
-            <a href="#"><span class="fab fa-tripadvisor"></span></a>
-            <a href="#"><span class="fab fa-facebook"></span></a>
-            <a href="#"><span class="fab fa-instagram"></span></a>
+            <a href="https://www.facebook.com/ICentoCampanili/"><span class="fab fa-facebook"></span></a>
+            <a href="https://www.tripadvisor.it/Hotel_Review-g652017-d6417747-Reviews-I_Cento_Campanili-Acireale_Province_of_Catania_Sicily.html"><span class="fab fa-tripadvisor"></span></a>
+            <a href="https://www.booking.com/hotel/it/i-cento-campanili.it.html?aid=318615;label=Italian_Italy_IT_IT_29562091465-8qKDqz49OOykZyRj_odFUAS217242743427%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi2653440116%3Atiaud-146342138230%3Adsa-301622835491%3Alp1008280%3Ali%3Adec%3Adm;sid=6e97d220b378c0d91c3f8423e16f2a40;bhgwe_bhr=0;dest_id=-109866;dest_type=city;dist=0;hapos=2;hpos=2;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1561826688;srpvid=f87d75c08ced00da;type=total;ucfs=1&#hotelTmpl"><span class="fab fa-blogger-b"></span></a>
           </p>
         </div>
       </div>
@@ -862,11 +862,11 @@
                   <div class="row">
                     <div class="col-md-6 form-group">
                       <label class="text-black font-weight-bold" for="name">Nome</label>
-                      <input type="text" id="name" class="form-control ">
+                      <input type="text" id="name2" class="form-control ">
                     </div>
                     <div class="col-md-6 form-group">
                       <label class="text-black font-weight-bold" for="phone">Telefono</label>
-                      <input type="text" id="phone" class="form-control ">
+                      <input type="text" id="phone2" class="form-control ">
                     </div>
                   </div>
 
@@ -880,11 +880,11 @@
                   <div class="row">
                     <div class="col-md-6 form-group">
                       <label class="text-black font-weight-bold" for="checkin_date">Data Check In</label>
-                      <input type="text" id="checkin_date" class="form-control">
+                      <input type="text" id="checkin_date2" class="form-control">
                     </div>
                     <div class="col-md-6 form-group">
                       <label class="text-black font-weight-bold" for="checkout_date">Data Check Out</label>
-                      <input type="text" id="checkout_date" class="form-control">
+                      <input type="text" id="checkout_date2" class="form-control">
                     </div>
                   </div>
 
@@ -893,11 +893,11 @@
                       <label for="adults" class="font-weight-bold text-black">Adulti</label>
                       <div class="field-icon-wrap">
                         <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                        <select name="" id="adults" class="form-control">
-                          <option value="">1</option>
-                          <option value="">2</option>
-                          <option value="">3</option>
-                          <option value="">4+</option>
+                        <select name="" id="adults2" class="form-control">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4+">4+</option>
                         </select>
                       </div>
                     </div>
@@ -906,10 +906,10 @@
                       <div class="field-icon-wrap">
                         <div class="icon"><span class="ion-ios-arrow-down"></span></div>
                         <select name="" id="children" class="form-control">
-                          <option value="">1</option>
-                          <option value="">2</option>
-                          <option value="">3</option>
-                          <option value="">4+</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4+">4+</option>
                         </select>
                       </div>
                     </div>
@@ -917,13 +917,13 @@
                   <div class="row mb-4">
                     <div class="col-md-12 form-group">
                       <label class="text-black font-weight-bold" for="message">Note</label>
-                      <textarea name="message" id="message" class="form-control " cols="30" rows="8"></textarea>
+                      <textarea name="message" id="message2" class="form-control " cols="30" rows="8"></textarea>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-md-6 form-group">
-                      <input type="submit" value="Prenota ora"
-                        class="btn btn-primary text-white py-3 px-5 font-weight-bold">
+                      <input value="Prenota ora"
+                        class="btn btn-primary text-white py-3 px-5 font-weight-bold" onclick="preserve()">
                     </div>
                   </div>
                 </form>
